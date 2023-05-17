@@ -4,13 +4,17 @@
     display: flex;
     flex-direction: row;
     gap: 5px;
+    
 }
 
 .main-content {
     width: 70%;
     margin: 2rem;
     grid-area: main;
+    padding: 15px;
     justify-content: flex-start;
+    border: 2px solid #000;
+    border-radius: 14px;
 }
 
 .main-side {
@@ -18,6 +22,9 @@
     margin: 2rem;
     grid-area: main;
     justify-content: flex-end;
+    border: 1px solid #000;
+    border-radius: 14px;
+    padding: 15px;
 }
 
 .mainside h1 {

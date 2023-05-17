@@ -32,8 +32,8 @@ header h1 {
 
 /* Style the footer */
 footer {
-    background-color: #ccc;
-    color: #d319d3;
+    background-color: #d319d3;
+    color: #fff;
     padding: 1rem;
     display: flex;
     flex-direction: row;
