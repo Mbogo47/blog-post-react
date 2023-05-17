@@ -15,6 +15,7 @@
     justify-content: flex-start;
     border: 2px solid #000;
     border-radius: 14px;
+    background-color: #eee;
 }
 
 .main-side {
@@ -25,6 +26,7 @@
     border: 1px solid #000;
     border-radius: 14px;
     padding: 15px;
+    background-color: #eee;
 }
 
 .mainside h1 {
