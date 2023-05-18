@@ -24,6 +24,21 @@ header {
     color: #fff;
     padding: 1rem;
     text-align: center;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    gap: 30rem;
+    padding: 5px;
+}
+
+nav .link{
+    display: flex;
+    /* gap: 3px; */
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
 }
 
 header h1 {
@@ -39,6 +54,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    padding: 15px;
     /* grid-area: footer; */
     /* text-align: center; */
 }

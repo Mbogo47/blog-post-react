@@ -1,6 +1,5 @@
-import './content.css'
-import SideBar from './sidebar.jsx'
-
+import { Link } from "react-router-dom";
+import Highlight from "./Highlight";
 const blogs = [
     {
         title: "5 Effective Strategies for Boosting Your Productivity at Work",
@@ -17,28 +16,19 @@ const blogs = [
 
 ]
 
-const Blog = ({ title, content }) => {
-    return (
-        <div>
-            <h2>{title}</h2>
-            <p>{content}</p>
+function SideBar () {
+    return(
+        <div className="main-side">
+            {
+                blogs.map((blog, index) => (
+                    <Link to='/blogs' className="link">
+                        <Highlight text={blog.title} id={index} />
+                    </Link>
+                ))
+            }          
         </div>
     )
 }
 
-const MainContent = () => {
-    return (
-        <section className='main'>
-            <div className="main-content">
-                {
-                    blogs.map((blog) => {
-                        return <Blog title={blog.title} content={blog.content} />
-                    })
-                }
-            </div>
-            <SideBar />
-        </section>
-    );
-}
 
-export default MainContent;
+export default SideBar;

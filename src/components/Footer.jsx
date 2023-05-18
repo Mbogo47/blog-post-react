@@ -1,10 +1,10 @@
 
-function Footer(props) {
-
+function Footer() {
+    const currentDate = new Date().toLocaleDateString();
     return (
         <footer>
-            <p>Posted by {props.authorName} </p>
-            <p>{props.postDate}</p> 
+            <p>Posted by Ivy Mbogo</p>
+            <p>{currentDate}</p> 
         </footer>
     );
 }
